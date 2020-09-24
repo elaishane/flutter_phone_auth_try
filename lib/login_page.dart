@@ -69,8 +69,7 @@ class _LoginPageState extends State<LoginPage> {
       AuthService().signIn(authResult);
     };
 
-    final PhoneVerificationFailed verificationfailed =
-        (AuthException authException) {
+    final PhoneVerificationFailed verificationfailed = (authException) {
       print('${authException.message}');
     };
 
